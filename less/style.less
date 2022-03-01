@@ -1,0 +1,316 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    body {
+        font-family: 'Avenir Next', sans-serif;
+    }
+
+    header {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+
+        .max-width-container {
+            max-width: 1080px;
+            margin: 0 auto;
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .header-logo {
+                    margin-left: -15px;
+
+                    a {
+                        img {
+                            width: 400px;
+                        }
+                    }
+                }
+
+                .buy-btn {
+                    a.btn {
+                        background-color: #1750DB;
+                        color: #fff;
+                        padding: 8px 25px;
+                        margin-right: 45px;
+                        border-radius: 5px;
+                    }
+
+                    img {
+                        width: 25px;
+                    }
+                }
+            }
+
+            // banner Section 
+            .header-banner {
+                display: flex;
+
+                .banner-text {
+                    margin-right: 100px;
+
+                    .banner-heading {
+                        font-size: 40px;
+                        color: #000;
+                        margin-top: 55px;
+                        font-weight: bold;
+                    }
+
+                    span {
+                        color: #1750DB;
+                        ;
+                    }
+
+                    .short-hearding {
+                        font-size: 16px;
+                        margin-top: 25px;
+                    }
+
+                    .shop-btn {
+                        margin-top: 25px;
+
+                        .btn {
+                            background-color: #1750DB;
+                            color: #fff;
+                            padding: 10px 45px;
+                            margin-right: 45px;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    p {
+                        font-size: 12px;
+                        margin-top: 25px;
+                    }
+                }
+
+                .banner-image {
+                    img {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Header background Image 
+    .bg-image {
+        background-image: url(../image/bg-banner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 52vh;
+        background-position: top right;
+    }
+
+    // Features Section
+    .features-max-width {
+        .features-box {
+            width: 90%;
+            margin: 0 auto;
+            color: #fff;
+            background-color: #1750DB;
+            position: relative;
+            margin-top: -50px;
+            margin-bottom: 100px;
+            // border-Radius Section 
+            padding: 50px 50px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 45px;
+
+
+            .features-heading {
+                h2 {
+                    font-size: 35px;
+                    margin-bottom: 35px;
+                    text-align: center;
+                }
+            }
+
+            .features {
+                display: flex;
+                justify-content: space-between;
+
+                .box-style {}
+
+                .flex-box {
+                    display: flex;
+                }
+
+
+                // Experience Section
+                .features-experience {
+                    &.box-style {}
+
+                    .experience-flex {}
+
+                    .experience-img {
+                        img {
+                            width: 75%;
+                        }
+                    }
+
+                    .features-text {
+                        h4 {}
+
+                        p {}
+                    }
+                }
+
+                // perfect-Fit Section
+                .features-perfect-fit {
+                    .perfect-fit-flex {
+
+                        // display: flex;
+                        .perfect-fit-img {
+                            img {
+                                width: 75%;
+                            }
+                        }
+
+                        .features-text {
+                            h4 {}
+
+                            p {}
+                        }
+                    }
+
+                }
+
+                // Professional Section 
+                .features-professional {
+                    .professionale-flex {
+                        .professional-img {
+                            img {
+                                width: 75%;
+                            }
+                        }
+
+                        .features-text {
+                            h4 {}
+
+                            p {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Banner Logo Section 
+    .banner-max-width {
+        max-width: 1000px;
+        margin: 0 auto;
+
+        .web-logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 100px;
+
+            &.logo {
+                // width: 1000px;
+            }
+        }
+    }
+
+    //   Pricing Section From Here 
+    .price-heading {
+        margin-bottom: 15px;
+
+        h2 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        span {
+            color: #1750DB;
+            font-weight: bold;
+        }
+    }
+    .main-box {
+        display: flex;
+        justify-content: space-around;
+        .banner-max-width {
+            .price-list {
+                .product-image {
+                    img {
+                        width: auto;
+                    }
+                }
+
+                .review {
+                    margin-top: 75px;
+
+                    .star-image {
+
+                        img {
+                            width: 15px;
+                            margin-bottom: 10px;
+                        }
+
+                        span {
+                            font-size: 15px;
+                            position: absolute;
+                            padding-left: 10px;
+                        }
+                    }
+
+                    .short-heading {
+                        h3 {
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+
+                        p {
+                            margin-bottom: 10px;
+                        }
+
+                        .price {
+                            font-weight: 700;
+                        }
+                    }
+
+                    // price Descripation From here 
+                    .short-dec {
+                        .short-flex {
+                            display: flex;
+                            position: absolute;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        img {
+                            width: 20px;
+                            margin-bottom: 10px;
+                            // position: absolute;
+                        }
+
+                        p {
+                            font-size: 15px;
+                            padding-left: 20px;
+                            padding-left: 30px;
+                            margin-bottom: 15px;
+                            // position: relative;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //  pricing Logo 
+    .price-container{
+        .price-log{
+
+        }
+    }
