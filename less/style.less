@@ -113,8 +113,10 @@
 
     // Features Section
     .features-max-width {
+        max-width: 1280px;
+        margin: 0 auto;
+
         .features-box {
-            width: 90%;
             margin: 0 auto;
             color: #fff;
             background-color: #1750DB;
@@ -209,28 +211,30 @@
 
     // Banner Logo Section 
     .banner-max-width {
-        max-width: 1000px;
+        max-width: 1280px;
         margin: 0 auto;
 
         .web-logo {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 100px;
             align-items: center;
             margin-bottom: 100px;
+        }
 
-            &.logo {
-                // width: 1000px;
-            }
+        &.logo {
+            // width: 1000px;
         }
     }
 
     //   Pricing Section From Here 
     .price-heading {
-        margin-bottom: 2 5px;
+        margin-bottom: 45px;
 
         h2 {
             text-align: center;
             font-weight: bold;
+            font-size: 35px;
         }
 
         span {
@@ -238,9 +242,13 @@
             font-weight: bold;
         }
     }
+
     .main-box {
+        max-width: 1280px;
+        margin: 0 auto;
         display: flex;
         justify-content: space-around;
+
         .banner-max-width {
             .price-list {
                 .product-image {
@@ -278,6 +286,28 @@
 
                         .price {
                             font-weight: 700;
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    .price-view {
+                        margin-top: 35px;
+                        background-color: #0542D9;
+                        text-align: center;
+                        border-radius: 10px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+
+                        a {
+                            text-align: center;
+                            text-decoration: none;
+                            color: #fff;
+
+                            .arrow {
+                                padding-left: 10px;
+                            }
                         }
                     }
 
@@ -308,14 +338,133 @@
             }
         }
     }
+
     //  pricing Logo 
-    .price-container{
-        max-width: 60%;
+    .price-container {
+        max-width: 1000px;
         margin: 0 auto;
-        .price-log{
+
+        .price-logo {
             display: flex;
             justify-content: space-around;
-            margin-top: 35px;
-            margin-bottom: 35px;
+            margin-top: 45px;
+            margin-bottom: 50px;
+
+            .icons {
+                img {
+                    width: auto;
+                }
+
+                .title {
+                    FONT-SIZE: 15px;
+                    font-weight: bold;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    // video Section Form Here
+    .video-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            font-size: 50px;
+            margin-bottom: 250px;
+
+            .blue {
+                font-size: 50px;
+                color: #0341d8;
+            }
+
+        }
+    }
+
+    .video-max-width {
+        max-width: 1280px;
+        margin: 0 auto;
+        background-color: #ebf1ff;
+
+        .video-max-width {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            bottom: 160px;
+            grid-gap: 30px;
+
+            .video {
+                .video-image {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .video-content {
+                    text-align: center;
+                    box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+                    border-radius: 40px;
+                    margin-top: 45px;
+                    padding: 20px;
+
+                    h4.video-title {
+                        font-size: 28px;
+                    }
+
+                    p {
+                        font-size: 22px;
+                    }
+
+                    a.shane {
+                        line-height: 7;
+                        text-align: center;
+                        font-size: 22px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+
+    // How it worke Box  Section 
+    .box-2 {
+        background-color: #0341d8;
+        max-width: 1280px;
+        margin: 0 auto;
+        border-radius: 46px 0 0 46px;
+        position: relative;
+        bottom: 145px;
+
+        .main-title {
+            display: flex;
+            justify-content: center;
+            font-size: 45px;
+            color: #fff;
+            padding: 22px 0;
+
+            .blue {
+                color: #7ea2fa;
+                margin-left: 10px;
+            }
+        }
+
+        .boxes-2 {
+            display: flex;
+            justify-content: space-between;
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 2px 0 15px;
+            .order-box{
+                img{
+                    
+                }
+            }
+            .heading {
+                font-size: 27px;
+                text-align: center;
+            }
+            .decription{
+                text-align: center;
+            }
         }
     }
