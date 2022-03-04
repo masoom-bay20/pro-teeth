@@ -531,6 +531,8 @@
     .table-max-width {
         max-width: 1285px;
         margin: 0 auto;
+        background: #E8EFFF;
+        padding: 50px;
 
         .table-heading {
             text-align: center;
@@ -573,6 +575,14 @@
                     }
 
                 }
+
+                tr {
+                    td {
+                        &:nth-child(2) {
+                            background: #E8EFFF;
+                        }
+                    }
+                }
             }
         }
     }
@@ -608,20 +618,62 @@
                 font-size: 30px;
                 color: black;
                 cursor: pointer;
+                -webkit-box-shadow: rgb(0 0 0 / 15%) 0px 3px 3px 0px;
                 box-shadow: rgb(0 0 0 / 15%) 0px 3px 3px 0px;
             }
 
-            .content {
-                position: relative;
-                background: white;
-                height: 0;
-                font-size: 20px;
-                text-align: justify;
-                width: 1000px;
-                overflow: hidden;
-                -webkit-transition: 0.5s;
-                transition: 0.5s;
-            }
-        }
-    }
 
+        }
+
+        // .accordion .faq.active .label::before {
+        //     content: "";
+        //     font-size: 30px;
+        //     background-image: url(../image/arrowup.png);
+        //     background-repeat: no-repeat;
+        //     width: 103px;
+        //     height: 25px;
+        //     display: block;
+        //     position: absolute;
+        //     z-index: 99999;
+        // }
+        // .accordion .label::before {
+        //     content: "+";
+        //     color: black;
+        //     position: absolute;
+        //     top: 50%;
+        //     right: 50px;
+        //     font-size: 30px;
+        //     transform: translateY(-50%);
+        // }
+
+        // .labe {
+        //     position: relative;
+        //     padding: 30px 0;
+        //     font-size: 30px;
+        //     color: black;
+        //     cursor: pointer;
+        //     box-shadow: rgb(0 0 0 / 15%) 0px 3px 3px 0px;
+        //     border-radius: 5px;
+        //     &.labe.active::before {
+        //         content: "";
+        //             font-size: 30px;
+        //             background-image: url(../image/arrowup.png);
+        //             background-repeat: no-repeat;
+        //             width: 103px;
+        //             height: 25px;
+        //             display: block;
+        //             position: absolute;
+        //             z-index: 99999;
+        //     }
+        //      &::before {
+        //         content: "+";
+        //         color: black;
+        //         position: absolute;
+        //         top: 50%;
+        //         right: 50px;
+        //         font-size: 30px;
+        //         transform: translateY(-50%);
+        //     }
+        // }
+
+    }
