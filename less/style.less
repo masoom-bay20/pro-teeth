@@ -5,6 +5,28 @@
         text-decoration: none;
     }
 
+    // FOnt face Section 
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('../font-test/OpenSans-Italic.woff') format('woff2'),
+            url('../font-test/OpenSans-Italic.woff2') format('woff');
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('../font-test/OpenSans-Regular.woff') format('woff2'),
+            url('../font-test/OpenSans-Regular.woff2') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+//   end   
+    
+
     body {
         font-family: 'Avenir Next', sans-serif;
     }
@@ -538,6 +560,7 @@
             text-align: center;
 
             h2 {
+                margin-bottom: 30px;
                 font-size: 50px;
 
                 .blue {
@@ -552,8 +575,12 @@
 
             table {
                 width: 100%;
+                height: 660px;
                 border: 1px solid #000;
                 margin-bottom: 200px;
+                background: #fff;
+                color: #000;
+
 
                 tr.first-t {
                     td.bg-tcolor {
@@ -676,4 +703,156 @@
         //     }
         // }
 
+    }
+
+    // Shop  Custom Night Guard section 
+    .contener-max-width {
+        max-width: 1285px;
+        margin: 0 auto;
+        background: #E8EFFF;
+
+        .shop-heading {
+            text-align: center;
+
+            h2 {
+                font-size: 50px;
+
+                .blue {
+                    font-size: 50px;
+                    color: #0341d8;
+                }
+            }
+        }
+
+        .shop-main {
+            .flex-box {
+                display: grid;
+                grid-template-columns: 1fr 4fr;
+
+                .left {
+                    img {}
+                }
+
+                .right {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .shop-image {
+                        width: 48%;
+
+                        img {
+                            width: 350px;
+                        }
+                    }
+
+                    .dec {
+                        width: 54%;
+
+                        .star-image {
+                            img {}
+
+                            span {}
+                        }
+
+                        .shop-sub-heading {
+                            h3 {}
+                        }
+
+                        .price {
+                            del {
+                                strong {}
+                            }
+
+                            label {}
+                        }
+
+                        select#hybird {}
+                    }
+                }
+            }
+        }
+    }
+
+    // Fotter Section 
+    footer {
+        background-color: #E8EFFF;
+
+        .footer-1 {
+            padding: 80px 2px 0;
+
+            a {
+                // color: $secondary-color;
+            }
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 30px;
+
+            .foot-description {
+                .social-icons {
+                    .f-icon {
+                        width: 20px !important;
+                    }
+
+                    img {
+                        width: 30px;
+                    }
+                }
+            }
+
+            .data-3 {
+                input[type="text"] {
+                    padding: 16px 76px;
+                    border: none;
+                }
+
+                h3.title {
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+
+                p.dec {
+                    margin-top: 52px;
+                    font-size: 20px;
+                }
+
+                h3.title {
+                    margin-top: 50px;
+                }
+
+                ul {
+                    line-height: 55px;
+                }
+
+                .social-icons {
+                    font-size: 33px;
+                    margin-top: 50px;
+                }
+
+                img.rocket {
+                    left: 269px;
+                    background: blue;
+                    position: relative;
+                    top: -52px;
+
+                    width: 50px;
+                    right: 0;
+                }
+            }
+        }
+
+        .footer-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0px;
+
+            .payment {
+                .content {
+                    h3 {
+                        display: inline;
+                    }
+                }
+            }
+        }
     }
