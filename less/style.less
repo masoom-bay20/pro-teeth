@@ -14,7 +14,7 @@
         font-style: italic;
         font-display: swap;
     }
-    
+
     @font-face {
         font-family: 'Open Sans';
         src: url('../font-test/OpenSans-Regular.woff') format('woff2'),
@@ -23,9 +23,9 @@
         font-style: normal;
         font-display: swap;
     }
-    
-//   end   
-    
+
+    //   end   
+
 
     body {
         font-family: 'Avenir Next', sans-serif;
@@ -779,16 +779,31 @@
 
         .footer-1 {
             padding: 80px 2px 0;
-
-            a {
-                // color: $secondary-color;
-            }
-
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 30px;
 
+            &.container {
+                max-width: 1300px;
+                margin: 0 auto;
+            }
+
+            a {
+                color: #000000;
+            }
+
+
             .foot-description {
+                .title {}
+
+                p {}
+                .f-contact{
+                    .phone{
+                        img{
+
+                        }
+                    }
+                }
                 .social-icons {
                     .f-icon {
                         width: 20px !important;
@@ -800,7 +815,7 @@
                 }
             }
 
-            .data-3 {
+            .f-resources {
                 input[type="text"] {
                     padding: 16px 76px;
                     border: none;
