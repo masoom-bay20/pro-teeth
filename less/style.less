@@ -5,30 +5,41 @@
         text-decoration: none;
     }
 
+    // varables For Colors 
+    @primary-color: #0341d8;
+    @secondary-color: #000000;
+    @light-color: #fff;
+    @backgroud: #efefef;
+
     // FOnt face Section 
     @font-face {
-        font-family: 'Open Sans';
-        src: url('../font-test/OpenSans-Italic.woff') format('woff2'),
-            url('../font-test/OpenSans-Italic.woff2') format('woff');
-        font-weight: normal;
-        font-style: italic;
+        font-family: 'Gilmer';
+        src: url('../fonts/Gilmer-Bold.woff2') format('woff2'),
+            url('../fonts/Gilmer-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
         font-display: swap;
     }
 
     @font-face {
-        font-family: 'Open Sans';
-        src: url('../font-test/OpenSans-Regular.woff') format('woff2'),
-            url('../font-test/OpenSans-Regular.woff2') format('woff');
+        font-family: 'Gilmer';
+        src: url('../fonts/Gilmer-Regular.woff2') format('woff2'),
+            url('../fonts/Gilmer-Regular.woff') format('woff');
         font-weight: normal;
         font-style: normal;
         font-display: swap;
     }
+
 
     //   end   
 
 
     body {
         font-family: 'Avenir Next', sans-serif;
+    }
+
+    li {
+        list-style: none;
     }
 
     header {
@@ -501,8 +512,9 @@
 
     // Labe Section here 
     .container {
-        max-width: 1285px;
+        max-width: 1600px;
         margin: 0 auto;
+        padding-top: 50px;
 
         .detail {
             display: flex;
@@ -706,12 +718,82 @@
     }
 
     // Shop  Custom Night Guard section 
-    .contener-max-width {
-        max-width: 1285px;
-        margin: 0 auto;
-        background: #E8EFFF;
+    // .contener-max-width {
+    //     max-width: 1285px;
+    //     margin: 0 auto;
+    //     background: #EFEFEF;
+
+    //     .shop-heading {
+    //         text-align: center;
+
+    //         h2 {
+    //             font-size: 50px;
+
+    //             .blue {
+    //                 font-size: 50px;
+    //                 color: #0341d8;
+    //             }
+    //         }
+    //     }
+
+    //     .shop-main {
+    //         .flex-box {
+    //             display: grid;
+    //             grid-template-columns: 1fr 4fr;
+
+    //             .left {
+    //                 img {}
+    //             }
+
+    //             .right {
+    //                 display: flex;
+    //                 justify-content: space-between;
+
+    //                 .shop-image {
+    //                     width: 48%;
+
+    //                     img {
+    //                         width: 350px;
+    //                     }
+    //                 }
+
+    //                 .dec {
+    //                     width: 54%;
+
+    //                     .star-image {
+    //                         img {}
+
+    //                         span {}
+    //                     }
+
+    //                     .shop-sub-heading {
+    //                         h3 {}
+    //                     }
+
+    //                     .price {
+    //                         del {
+    //                             strong {}
+    //                         }
+
+    //                         label {}
+    //                     }
+
+    //                     select#hybird {}
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+    // New Shop section 
+
+    .product-container {
+
+        background-color: #E8EFFF;
 
         .shop-heading {
+            margin-top: 50px;
+            margin-bottom: 50px;
             text-align: center;
 
             h2 {
@@ -724,54 +806,92 @@
             }
         }
 
-        .shop-main {
-            .flex-box {
-                display: grid;
-                grid-template-columns: 1fr 4fr;
+        .flex-product {
+            display: flex;
+            justify-content: space-around;
 
-                .left {
-                    img {}
+            .product {
+                display: flex;
+
+                .small-img {
+                    display: grid;
+                }
+            }
+
+            .big-img {
+                padding-left: 60px;
+            }
+        }
+
+        .section-2 {
+            padding-top: 100px;
+            display: flex;
+            justify-content: space-around;
+            max-width: 82%;
+            margin: 0 auto;
+            align-items: center;
+            line-height: 1.3rem;
+
+            .icons {
+                .icon {
+                    text-align: center;
                 }
 
-                .right {
-                    display: flex;
-                    justify-content: space-between;
+                h5 {
+                    text-align: center;
+                }
+            }
+        }
 
-                    .shop-image {
-                        width: 48%;
+        .product-details {
+            .option-tab {
+                display: flex;
+                justify-content: space-between;
 
-                        img {
-                            width: 350px;
-                        }
+                .tab {
+                    margin-top: 10px;
+                }
+
+                .tab1 {
+                    p {
+                        border-bottom: 3px solid blue;
+                        padding: 30px 0;
                     }
+                }
 
-                    .dec {
-                        width: 54%;
+                p {
 
-                        .star-image {
-                            img {}
-
-                            span {}
-                        }
-
-                        .shop-sub-heading {
-                            h3 {}
-                        }
-
-                        .price {
-                            del {
-                                strong {}
-                            }
-
-                            label {}
-                        }
-
-                        select#hybird {}
-                    }
+                    padding: 30px 0;
                 }
             }
         }
     }
+
+    // select#hybrid::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     left: 0;
+    //     background-image: url(../img/arrowup.png);
+    //     color: red;
+    // }
+    select {
+        position: relative;
+        padding: 10px;
+        border: 1px solid #E6E6E6;
+    }
+
+    select::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        display: inline-block;
+        background: url("../image/arrowup.png");
+        width: 30px;
+        height: 30px;
+    }
+
 
     // Fotter Section 
     footer {
@@ -797,13 +917,13 @@
                 .title {}
 
                 p {}
-                .f-contact{
-                    .phone{
-                        img{
 
-                        }
+                .f-contact {
+                    .phone {
+                        img {}
                     }
                 }
+
                 .social-icons {
                     .f-icon {
                         width: 20px !important;
@@ -813,26 +933,13 @@
                         width: 30px;
                     }
                 }
+
             }
 
             .f-resources {
                 input[type="text"] {
                     padding: 16px 76px;
                     border: none;
-                }
-
-                h3.title {
-                    font-size: 22px;
-                    font-weight: 700;
-                }
-
-                p.dec {
-                    margin-top: 52px;
-                    font-size: 20px;
-                }
-
-                h3.title {
-                    margin-top: 50px;
                 }
 
                 ul {
@@ -853,6 +960,48 @@
                     width: 50px;
                     right: 0;
                 }
+            }
+
+            ul {
+                line-height: 55px;
+                line-height: 55px;
+            }
+
+            .data-3 {
+                img.rocket {
+                    background-color: blue;
+                    width: 40px;
+                    position: relative;
+                    bottom: 40px;
+                    border-radius: 3px;
+                    left: 223px;
+                }
+
+                input[type="text"] {
+                    padding: 10px 10px;
+
+                    border: navajowhite;
+                    font-size: 20px;
+                    margin-top: 19px;
+                }
+
+                p.dec {
+                    margin-top: 52px;
+                    margin-bottom: 25px;
+                    font-size: 20px;
+                }
+
+                h3.title {
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+
+                .phone {
+                    margin-bottom: 25px;
+                }
+
             }
         }
 
