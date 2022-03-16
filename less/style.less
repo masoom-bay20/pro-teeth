@@ -528,7 +528,8 @@
 
     // How it worke Box  Section 
     .box-2 {
-        margin-top: 45px; 
+        margin-top: 45px !important;
+        padding-bottom: 100px;
         background-color: #0341d8;
         max-width: 1685px;
         margin: 0 auto;
@@ -543,6 +544,7 @@
             justify-content: center;
             font-size: 45px;
             color: #fff;
+
             .blue {
                 color: #7ea2fa;
                 margin-left: 10px;
@@ -574,6 +576,7 @@
 
             .decription {
                 text-align: center;
+                font-size: 25px;
             }
         }
     }
@@ -609,6 +612,10 @@
 
                 p {
                     font-size: 25px;
+                }
+
+                strong {
+                    font-size: 22px;
                 }
 
                 a {
@@ -732,56 +739,51 @@
 
         }
 
-        // .accordion .faq.active .label::before {
-        //     content: "";
-        //     font-size: 30px;
-        //     background-image: url(../image/arrowup.png);
-        //     background-repeat: no-repeat;
-        //     width: 103px;
-        //     height: 25px;
-        //     display: block;
-        //     position: absolute;
-        //     z-index: 99999;
-        // }
-        // .accordion .label::before {
-        //     content: "+";
-        //     color: black;
-        //     position: absolute;
-        //     top: 50%;
-        //     right: 50px;
-        //     font-size: 30px;
-        //     transform: translateY(-50%);
-        // }
+        .accordion .faq.active .label::before {
+            content: "";
+            font-size: 30px;
+            background-image: url(../image/arrowup.png);
+            background-repeat: no-repeat;
+            width: 103px;
+            height: 25px;
+            display: block;
+            position: absolute;
+            z-index: 99999;
+        }
 
-        // .labe {
-        //     position: relative;
-        //     padding: 30px 0;
-        //     font-size: 30px;
-        //     color: black;
-        //     cursor: pointer;
-        //     box-shadow: rgb(0 0 0 / 15%) 0px 3px 3px 0px;
-        //     border-radius: 5px;
-        //     &.labe.active::before {
-        //         content: "";
-        //             font-size: 30px;
-        //             background-image: url(../image/arrowup.png);
-        //             background-repeat: no-repeat;
-        //             width: 103px;
-        //             height: 25px;
-        //             display: block;
-        //             position: absolute;
-        //             z-index: 99999;
-        //     }
-        //      &::before {
-        //         content: "+";
-        //         color: black;
-        //         position: absolute;
-        //         top: 50%;
-        //         right: 50px;
-        //         font-size: 30px;
-        //         transform: translateY(-50%);
-        //     }
-        // }
+        .accordion .label::before {
+            content: "+";
+            color: black;
+            position: absolute;
+            top: 50%;
+            right: 50px;
+            font-size: 30px;
+            transform: translateY(-50%);
+        }
+
+        .label {
+            position: relative;
+            padding: 30px 0;
+            font-size: 30px;
+            color: black;
+            cursor: pointer;
+            box-shadow: rgb(0 0 0 / 15%) 0px 3px 3px 0px;
+            border-radius: 5px;
+
+            &.labe.active::before {
+                content: "";
+                font-size: 30px;
+                background-image: url(../image/arrowdown.png);
+                background-repeat: no-repeat;
+                width: 103px;
+                height: 25px;
+                display: block;
+                position: absolute;
+                z-index: 99999;
+            }
+
+           
+        }
 
     }
 
@@ -1093,3 +1095,74 @@
             }
         }
     }
+    // new css for
+    .accordion {
+        width: 1287px;
+        margin: 90px auto;
+        color: black;
+        background-color: white;
+        padding: 45px 45px;
+        h2.main-title {
+          text-align: center;
+        }
+        .faq {
+          position: relative;
+          margin: 46px 29px;
+        }
+        .label {
+          position: relative;
+          padding: 15px;
+          font-size: 18px;
+          color: black;
+          border-radius: 17px;
+          cursor: pointer;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+          &::before {
+            content: "";
+            color: black;
+            position: absolute;
+            top: 50%;
+            background-image: url(../img/arrowdown.png);
+            right: 50px;
+            font-size: 30px;
+            transform: translateY(-50%);
+            background-repeat: no-repeat;
+            width: 103px;
+            height: 25px;
+            display: block;
+            position: absolute;
+            z-index: 99999;
+          }
+        }
+        .content {
+          position: relative;
+          background: white;
+          height: 0;
+          font-size: 20px;
+          text-align: justify;
+          width: 1000px;
+          overflow: hidden;
+          transition: 0.5s;
+        }
+      
+        .faq.active {
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+          border-radius: 5px;
+          .content {
+            height: 300px;
+          }
+          .label {
+            &::before {
+              content: "";
+              font-size: 30px;
+              background-image: url(../img/arrowup.png);
+              background-repeat: no-repeat;
+              width: 103px;
+              height: 25px;
+              display: block;
+              position: absolute;
+              z-index: 99999;
+            }
+          }
+        }
+      }

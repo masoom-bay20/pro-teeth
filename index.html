@@ -20,7 +20,8 @@
         <div class="max-width-container">
             <nav>
                 <div class="header-logo">
-                    <a href="#"><img src="image/ProTeethGuard-FullLogo-Horizontal-BlackBlue.png" alt="Proo-Teeth-Guard"></a>
+                    <a href="#"><img src="image/ProTeethGuard-FullLogo-Horizontal-BlackBlue.png"
+                            alt="Proo-Teeth-Guard"></a>
                 </div>
                 <div class="buy-btn">
                     <a href="#" class="btn">Get $15 Off</a>
@@ -69,7 +70,7 @@
                             <img src="image/experience.png" alt="">
                         </div>
                         <div class="features-text">
-                            <h4>Experience</h4> 
+                            <h4>Experience</h4>
                             <p>10 years & 30,000+</p>
                             <p>happy customers:yours</p>
                             <p>trusted dental night</p>
@@ -141,7 +142,7 @@
         <div class="banner-max-width">
             <div class="price-list">
                 <div class="product-image">
-                    <img src="image/product.png" alt="">
+                    <img src="image/blue-product.png" alt="">
                 </div>
                 <div class="review">
                     <div class="star-image">
@@ -198,9 +199,9 @@
         <div class="banner-max-width">
             <div class="price-list">
                 <div class="product-image">
-                    <img src="image/product.png" alt="">
+                    <img src="image/blue-product.png"" alt="">
                 </div>
-                <div class="review">
+                <div class=" review">
                     <div class="star-image">
                         <img src="image/star-fill.png" alt="">
                         <img src="image/star-fill.png" alt="">
@@ -255,9 +256,9 @@
         <div class="banner-max-width">
             <div class="price-list">
                 <div class="product-image">
-                    <img src="image/product.png" alt="">
+                    <img src="image/blue-product.png"" alt="">
                 </div>
-                <div class="review">
+                <div class=" review">
                     <div class="star-image">
                         <img src="image/star-fill.png" alt="">
                         <img src="image/star-fill.png" alt="">
@@ -312,9 +313,9 @@
         <div class="banner-max-width">
             <div class="price-list">
                 <div class="product-image">
-                    <img src="image/product.png" alt="">
+                    <img src="image/blue-product.png"" alt="">
                 </div>
-                <div class="review">
+                <div class=" review">
                     <div class="star-image">
                         <img src="image/star-fill.png" alt="">
                         <img src="image/star-fill.png" alt="">
@@ -579,7 +580,8 @@
                 <thead>
                     <tr class="first-t">
                         <td class="bg-tcolor"></td>
-                        <td class="t-logo"><img src="image/ProTeethGuard-FullLogo-Horizontal-BlackBlue.png" alt="table logo"></td>
+                        <td class="t-logo"><img src="image/ProTeethGuard-FullLogo-Horizontal-BlackBlue.png"
+                                alt="table logo"></td>
                         <td class="bg-tcolor">
                             Boil and Bite
                         </td>
@@ -944,7 +946,15 @@
     </footer>
 
     <!-- JS for drop doen meanu  -->
-    <script src="javascript/action.js"></script>
+    <script>
+        const accordion = document.getElementsByClassName('faq');
+
+        for (i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener('click', function () {
+                this.classList.toggle('active')
+            })
+        }
+    </script>
 </body>
 
 </html>
